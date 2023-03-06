@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: beige;
+}
+
+#mainarea {
+    position: absolute;
+    inset: 10px;
+    background-color: rgb(203, 203, 169);
+    border-radius: 10px;
+}
+
+#title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    bottom: calc(100% - 75px);
+    padding: 10px 50px;
+    background-color: rgb(201, 233, 158);
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 28px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+#textarea {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 90px;
+    bottom: 15px;
+    padding: 10px 50px;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#log {
+    background-color: #f8f8f8;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    position: absolute;
+    inset: 10px 10px 75px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#log::-webkit-scrollbar {
+    display: none;
+}
+
+#log > * {
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+#inputcontainer {
+    background-color: #f8f8f8;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    position: absolute;
+    inset: calc(100% - 60px) 10px 10px 10px;
+    vertical-align: middle;
+    display: flex;
+    align-items:center;
+
+}
+
+#inputarea {
+    font-family: monospace;
+    position: absolute;
+    font-size: 18px;
+    inset: 10px;
+    overflow: clip;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+
+#inputarea:focus {
+    outline: none;
+}
+
+.big-red-text {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.message-echo {
+    color: #666666;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.new-room {
+    font-size: 16px;
+    padding-top: 20px;
+    border-bottom: 1px solid #888888;
+}
